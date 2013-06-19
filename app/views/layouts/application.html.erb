@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knalezy - Share your skill</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="menu">
+			<%= link_to "Knalezy", public_home_path %> | Share your skill |
+			<%= link_to "About us", public_about_us_path %> |
+			<%= link_to "Contact us", public_contact_us_path %> |
+			<%= link_to "Edit Profile", page_setting_path %> |
+			<% if user_signed_in? %>
+				Hello, <%= current_user.email %> | 
+				<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+			<% else %>
+				<%= link_to "Login", new_user_session_path %>
+			<% end %>
+		</div>
+		<div>
+			<p class="notice"><%= notice %></p>
+	   <p class="alert"><%= alert %></p>
+		</div>
+
+<%= yield %>
+
+</body>
+</html>
