@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+  before_filter :authenticate_user!
   def by_category
     @category = Category.where(:name => params[:category_name]).first
     @posts = Post.where(:category_id => @category.id)

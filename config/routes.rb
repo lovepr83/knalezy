@@ -25,7 +25,7 @@ Knalezy::Application.routes.draw do
 
   get "public/home"
   
-  root :to => "public#home"
+  root :to => "posts#index"
   
   match ':category_name' => 'posts#by_category', :as => :by_category
   
