@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}, {}, :multiple => true %>
+  </div>
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -18,6 +21,8 @@
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
+  </div>
+ 
   </div>
   <div class="actions">
     <%= f.submit %>
