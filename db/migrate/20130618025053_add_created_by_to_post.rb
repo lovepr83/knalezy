@@ -1,5 +1,5 @@
 class AddCreatedByToPost < ActiveRecord::Migration
   def change
-    add_column :posts, :Create_by, :string
+    add_column :posts, :created_by, :string
   end
 end

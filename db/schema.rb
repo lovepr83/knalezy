@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20130618025053) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.integer  "category_id"
-    t.string   "Create_by"
+    t.string   "created_by"
   end
 
   create_table "publics", :force => true do |t|
