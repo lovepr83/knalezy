@@ -1,4 +1,12 @@
 Knalezy::Application.routes.draw do
+  get "pages/computer"
+
+  get "pages/language"
+
+  get "pages/music"
+
+  get "pages/workout"
+
   resources :posts
 
 

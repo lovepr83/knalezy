@@ -6,15 +6,13 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
-<title>Knalezy</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="assets/superfish.css" media="screen">
-<link rel="stylesheet" href="assets/nivo-slider.css" media="all">
-<link rel="stylesheet" href="assets/tweet.css" media="all">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/lessframework.css" media="all">
-<script src="js/modernizr-2.5.3.min.js"></script>
+  <title>Knalezy</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 </head>
 
 <body>
@@ -33,6 +31,7 @@
     </div>
     <div class="cf"></div>
 	<!-- ENDS social-bar -->
+	<div align="center"; font-color: "red"> KNALEZY - Share your skill </div>
 	<div id="logo" class="cf"> <a href="/posts"><%= image_tag "logo.png" %></a> </div>
     
 	<!-- nav -->
@@ -41,15 +40,15 @@
         <li class="current-menu-item"><a href="/posts"><span>HOME</span></a></li>
         <li><a href="/categories"><span>PAGE</span></a>
           <ul>
-            <li><a href="/page/computer">Computer</a></li>
-            <li><a href="/page/language">Language</a></li>
-            <li><a href="/page/music">Music</a></li>
-            <li><a href="/page/workout">WorkOut</a></li>
+            <li><%= link_to "Computer", pages_computer_path %></li>
+            <li><%= link_to "Language", pages_language_path %></li>
+            <li><%= link_to "Music", pages_music_path %></li>
+            <li><%= link_to "Workout", pages_workout_path %></li>
           </ul>
         </li>
         <li><a href="blog.html"><span>FORUM</span></a></li>
         <li><a href="portfolio.html"><span>WORK</span></a></li>
-        <li><a href="contact.html"><span>CONTACT</span></a></li>
+        <li><%= link_to "CONTACT", public_about_us_path %></li>
       </ul>
       <div id="combo-holder"></div>
     </nav>
@@ -80,7 +79,7 @@
     <!-- bottom -->
     <div id="bottom">
       <div id="widget-trigger-holder"><a id="widget-trigger" href="#" title="View More" class="poshytip"></a></div>
-      <div id="content">&copy; Copyright 2012 <a href="#">Company Name</a> All Rights Reserved | Website Template By <a target="_blank" href="http://www.luiszuno.com">luiszuno</a></div>
+      <div id="content">&copy; Copyright 2012 <a href="#">Knalezy</a> All Rights Reserved | Website Template By <a target="_blank" href="http://www.luiszuno.com">luiszuno</a></div>
     </div>
     <!-- ENDS bottom -->
   </footer>
