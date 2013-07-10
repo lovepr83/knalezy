@@ -1,4 +1,7 @@
 Knalezy::Application.routes.draw do
+  
+  match "pages/:category" => "pages#category"
+  
   get "pages/computer"
 
   get "pages/language"
@@ -6,22 +9,13 @@ Knalezy::Application.routes.draw do
   get "pages/music"
 
   get "pages/workout"
+  
+  
 
   resources :posts
 
 
   resources :categories
-
-
-  get "page/computer"
-
-  get "page/music"
-
-  get "page/language"
-
-  get "page/workout"
-  
-  get "page/setting"
 
   devise_for :users
 

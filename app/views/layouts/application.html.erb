@@ -31,6 +31,13 @@
     </div>
     <div class="cf"></div>
 	<!-- ENDS social-bar -->
+	<div id="current_user" style="text-align:right;margin-right:10px;">
+		<% if user_signed_in? %>
+			hi, <%= current_user.email %> | <%= link_to "LOGOUT", destroy_user_session_path, :method => :delete %>
+		<% else %>
+			<%= link_to "LOGIN", new_user_session_path %>
+		<% end %>
+	</div>
 	<div align="center"; font-color: "red"> KNALEZY - Share your skill </div>
 	<div id="logo" class="cf"> <a href="/posts"><%= image_tag "logo.png" %></a> </div>
     
@@ -38,7 +45,7 @@
     <nav class="cf">
       <ul id="nav" class="sf-menu">
         <li class="current-menu-item"><a href="/posts"><span>HOME</span></a></li>
-        <li><a href="/categories"><span>PAGE</span></a>
+        <li><%= link_to "PAGE", categories_path %>
           <ul>
             <li><%= link_to "Computer", pages_computer_path %></li>
             <li><%= link_to "Language", pages_language_path %></li>

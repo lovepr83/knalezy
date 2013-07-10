@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :pages
-  belongs_to :post
+  has_many :posts
+ 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable

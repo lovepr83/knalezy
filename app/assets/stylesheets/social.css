@@ -46,38 +46,38 @@
   top: -32px;
 }
 #social-bar .dribbble a {
-  background-image: url('../img/social/dribbble.png');
+  background-image: url('/assets/dribbble.png');
 }
 #social-bar .facebook a {
-  background-image: url('../img/social/facebook.png');
+  background-image: url('/assets/facebook.png');
 }
 #social-bar .flickr a {
-  background-image: url('../img/social/flickr.png');
+  background-image: url('/assets/flickr.png');
 }
 #social-bar .forrst a {
-  background-image: url('../img/social/forrst.png');
+  background-image: url('/assets/forrst.png');
 }
 #social-bar .github a {
-  background-image: url('../img/social/github.png');
+  background-image: url('/assets/github.png');
 }
 #social-bar .googleplus a {
-  background-image: url('../img/social/googleplus.png');
+  background-image: url('/assets/googleplus.png');
 }
 #social-bar .lastfm a {
-  background-image: url('../img/social/lastfm.png');
+  background-image: url('/assets/lastfm.png');
 }
 #social-bar .linkedin a {
-  background-image: url('../img/social/linkedin.png');
+  background-image: url('/assets/linkedin.png');
 }
 #social-bar .rss a {
-  background-image: url('../img/social/rss.png');
+  background-image: url('/assets/rss.png');
 }
 #social-bar .twitter a {
-  background-image: url('../img/social/twitter.png');
+  background-image: url('/assets/twitter.png');
 }
 #social-bar .vimeo a {
-  background-image: url('../img/social/vimeo.png');
+  background-image: url('/assets/vimeo.png');
 }
 #social-bar .youtube a {
-  background-image: url('../img/social/youtube.png');
+  background-image: url('/assets/youtube.png');
 }
